@@ -1,0 +1,16 @@
+jasypt:
+  encryptor:
+    password: Develop3r
+    iv-generator-classname: org.jasypt.iv.RandomIvGenerator
+    algorithm: PBEWITHHMACSHA512ANDAES_256
+    key-obtention-iterations: 1000
+    salt-generator-classname: org.jasypt.salt.RandomSaltGenerator
+    string-output-type: base64
+
+cloud:
+  aws:
+    region:
+      auto: false
+      static: us-east-1
+    stack:
+      auto: false

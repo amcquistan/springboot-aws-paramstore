@@ -1,0 +1,7 @@
+aws:
+  paramstore:
+    enabled: true
+
+spring:
+  application:
+    name: awsparams-demo
