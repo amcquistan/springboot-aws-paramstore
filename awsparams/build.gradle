@@ -26,9 +26,14 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-actuator'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	implementation 'org.springframework.cloud:spring-cloud-starter'
+
+    // these two are required to work with AWS Spring Cloud
 	implementation 'org.springframework.cloud:spring-cloud-starter-bootstrap'
 	implementation 'io.awspring.cloud:spring-cloud-starter-aws-parameter-store-config:2.4.2'
+
+    // this is required to utilize JASYPT
 	implementation 'com.github.ulisesbocchio:jasypt-spring-boot-starter:3.0.5'
+
 	compileOnly 'org.projectlombok:lombok'
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
